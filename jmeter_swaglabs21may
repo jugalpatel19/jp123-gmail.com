@@ -1,0 +1,31 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1716271956375,749,HTTP Request,200,OK,Thread Group 1-5,text,true,,3951,287,10,10,https://www.saucedemo.com/,113,0,52
+1716271956375,113,HTTP Request-0,301,Moved Permanently,Thread Group 1-5,text,true,,658,166,10,10,http://www.saucedemo.com/,113,0,52
+1716271956489,635,HTTP Request-1,200,OK,Thread Group 1-5,text,true,,3293,121,10,10,https://www.saucedemo.com/,635,0,243
+1716271956073,1062,HTTP Request,200,OK,Thread Group 1-2,text,true,,3951,287,9,9,https://www.saucedemo.com/,194,0,145
+1716271956073,197,HTTP Request-0,301,Moved Permanently,Thread Group 1-2,text,true,,658,166,9,9,http://www.saucedemo.com/,194,0,145
+1716271956271,864,HTTP Request-1,200,OK,Thread Group 1-2,text,true,,3293,121,9,9,https://www.saucedemo.com/,853,0,461
+1716271956474,663,HTTP Request,200,OK,Thread Group 1-6,text,true,,3951,287,8,8,https://www.saucedemo.com/,138,0,59
+1716271956474,138,HTTP Request-0,301,Moved Permanently,Thread Group 1-6,text,true,,658,166,8,8,http://www.saucedemo.com/,138,0,59
+1716271956614,523,HTTP Request-1,200,OK,Thread Group 1-6,text,true,,3293,121,8,8,https://www.saucedemo.com/,522,0,163
+1716271956175,962,HTTP Request,200,OK,Thread Group 1-3,text,true,,3952,287,8,8,https://www.saucedemo.com/,103,0,50
+1716271956175,103,HTTP Request-0,301,Moved Permanently,Thread Group 1-3,text,true,,659,166,8,8,http://www.saucedemo.com/,103,0,50
+1716271956280,857,HTTP Request-1,200,OK,Thread Group 1-3,text,true,,3293,121,8,8,https://www.saucedemo.com/,857,0,452
+1716271956073,1066,HTTP Request,200,OK,Thread Group 1-1,text,true,,3951,287,6,6,https://www.saucedemo.com/,194,0,144
+1716271956073,197,HTTP Request-0,301,Moved Permanently,Thread Group 1-1,text,true,,658,166,6,6,http://www.saucedemo.com/,194,0,144
+1716271956272,867,HTTP Request-1,200,OK,Thread Group 1-1,text,true,,3293,121,6,6,https://www.saucedemo.com/,866,0,460
+1716271956584,555,HTTP Request,200,OK,Thread Group 1-7,text,true,,3950,287,6,6,https://www.saucedemo.com/,129,0,66
+1716271956584,129,HTTP Request-0,301,Moved Permanently,Thread Group 1-7,text,true,,658,166,6,6,http://www.saucedemo.com/,129,0,66
+1716271956713,426,HTTP Request-1,200,OK,Thread Group 1-7,text,true,,3292,121,6,6,https://www.saucedemo.com/,426,0,167
+1716271956274,908,HTTP Request,200,OK,Thread Group 1-4,text,true,,3951,287,4,4,https://www.saucedemo.com/,128,0,64
+1716271956274,128,HTTP Request-0,301,Moved Permanently,Thread Group 1-4,text,true,,658,166,4,4,http://www.saucedemo.com/,128,0,64
+1716271956403,779,HTTP Request-1,200,OK,Thread Group 1-4,text,true,,3293,121,4,4,https://www.saucedemo.com/,777,0,329
+1716271956688,510,HTTP Request,200,OK,Thread Group 1-8,text,true,,3949,287,3,3,https://www.saucedemo.com/,147,0,60
+1716271956688,147,HTTP Request-0,301,Moved Permanently,Thread Group 1-8,text,true,,658,166,3,3,http://www.saucedemo.com/,147,0,60
+1716271956836,362,HTTP Request-1,200,OK,Thread Group 1-8,text,true,,3291,121,3,3,https://www.saucedemo.com/,359,0,291
+1716271956777,482,HTTP Request,200,OK,Thread Group 1-9,text,true,,3949,287,2,2,https://www.saucedemo.com/,145,0,78
+1716271956777,145,HTTP Request-0,301,Moved Permanently,Thread Group 1-9,text,true,,658,166,2,2,http://www.saucedemo.com/,145,0,78
+1716271956923,336,HTTP Request-1,200,OK,Thread Group 1-9,text,true,,3291,121,2,2,https://www.saucedemo.com/,335,0,276
+1716271956876,421,HTTP Request,200,OK,Thread Group 1-10,text,true,,3949,287,1,1,https://www.saucedemo.com/,238,0,55
+1716271956876,238,HTTP Request-0,301,Moved Permanently,Thread Group 1-10,text,true,,658,166,1,1,http://www.saucedemo.com/,238,0,55
+1716271957125,172,HTTP Request-1,200,OK,Thread Group 1-10,text,true,,3291,121,1,1,https://www.saucedemo.com/,172,0,120
