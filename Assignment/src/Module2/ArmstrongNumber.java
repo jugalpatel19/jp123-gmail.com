@@ -1,7 +1,7 @@
 package Module2;
 /*
  * 
- * W.A.J.P to check given number is Armstrong or not?  test
+ * W.A.J.P to check given number is Armstrong or not?  test rere
  */
 
 public class ArmstrongNumber {
