@@ -6,7 +6,7 @@ import java.security.PublicKey;
  * 
  * Overriding:
  * same function same parameter same return type
- * but different function body/func def
+ * but different function body/function different
  * 
  * keyword:
  * super: call the function of immediate parent 
