@@ -30,7 +30,7 @@ public static void main(String[] args) {
        total = total + marks[i];
     }
     sc.close();
-    //Calculating average here
+    
     avg = total/3;
     System.out.print("The student Grade is: ");
     if(avg>=100)
