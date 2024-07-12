@@ -18,7 +18,7 @@ package com.oops;
 class VolumeOfBox
 {
 	double length,width,height;
-	//default costructor
+	//default constructor
 	public VolumeOfBox() 
 	{
 		System.out.println("In Default constructor");
