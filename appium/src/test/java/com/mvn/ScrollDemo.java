@@ -21,6 +21,10 @@ public class ScrollDemo extends BestTest {
 		
 		driver.findElement(AppiumBy.accessibilityId("Bouncing Balls")).click();
 		Thread.sleep(2000);
+		
+		driver.findElement(AppiumBy.accessibilityId("Play")).click();
+		Thread.sleep(3000);
+				
 	}
 
 }
