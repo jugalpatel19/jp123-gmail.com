@@ -12,8 +12,10 @@ import org.testng.annotations.BeforeTest;
 
 import com.google.common.collect.ImmutableMap;
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class BestTest {
 	public AndroidDriver driver;
@@ -43,6 +45,56 @@ public class BestTest {
 				ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),
 						"duration",2000));
 	}
+	
+	public void swipeAction(WebElement ele,String direction)
+	{
+		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+				"elementId", ((RemoteWebElement)ele).getId(),
+			 
+			    "direction", direction,
+			    "percent", 0.15
+			));	
+	}
+//	public void seekbar(WebElement slider) {
+//		int xAxisStartPoint=slider.getLocation().getX();
+//		int xAxisEndPoint=xAxisStartPoint+slider.getSize().getWidth();
+//		int yAxisStartPoint=slider.getLocation().getY();
+//		
+//		
+//		TouchAction action=new TouchAction(driver);
+//		
+//		action.press(PointOption.point(xAxisStartPoint, yAxisStartPoint))
+//		.moveTo(PointOption.point(xAxisEndPoint-1,yAxisStartPoint))
+//		.release()
+//		.perform();
+
+	
+	public void seekbar2(WebElement seekBar) {
+		//Get start point of seekbar.
+	       int startX = seekBar.getLocation().getX();
+	       System.out.println(startX);
+	    
+	      //Get vertical location of seekbar.
+	       int startY = seekBar.getLocation().getY();
+	       System.out.println(startY);
+	    
+	       //Get end point of seekbar.
+	       int endX = seekBar.getSize().getWidth();
+	       System.out.println(endX);
+	    
+	    
+	       //Set seekbar move to position.
+	       //endX * 0.6 means at 60% of seek bar width.
+	      //endX * 0.9 means at 100% of seek bar width.
+	       int moveToXDirectionAt = (int) (endX * 0.60);
+	       System.out.println("Moving seek bar at " + moveToXDirectionAt+" In X direction.");
+	    
+	       //Moving seekbar using TouchAction class.
+	       TouchAction act=new TouchAction(driver);
+	       act.press(PointOption.point(startX,startY)).moveTo(PointOption.point(moveToXDirectionAt,startY)).release().perform();
+		
+	}
+
 	
 	
 	
