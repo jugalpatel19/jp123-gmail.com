@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-783008682\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-648789237\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.mvn.SeekBar" class="method navigator-link" hash-for-method="seek">seek</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.mvn.GeneralStore" class="method navigator-link" hash-for-method="store">store</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,21 +121,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.mvn.SeekBar</span>
+              <span class="class-name">com.mvn.GeneralStore</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="seek">
-                  </a> <!-- seek -->
-                  <span class="method-name">seek</span>
-                  <div class="stack-trace">org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+                  <a name="store">
+                  </a> <!-- store -->
+                  <span class="method-name">store</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [c2a63714-14c7-4330-bc66-97d1d6250b9e, performTouchAction {actions=[{action=press, options={x=0, y=210}}, {action=moveTo, options={x=648, y=210}}, {action=release, options={}}]}]
+Command: [0cba6879-bba6-43c9-944f-761199ff2ba6, findElement {using=id, value=com.androidsample.generalstore:id/nameField}]
 Capabilities {appium:app: D:\appium\apk file\apidemos..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\appium\apk file\apidemos..., automationName: UIAutomator2, deviceName: jugal, platformName: ANDROID}, appium:deviceApiLevel: 28, appium:deviceManufacturer: Google, appium:deviceModel: AOSP on IA Emulator, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 9, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: c2a63714-14c7-4330-bc66-97d1d6250b9e
+Session ID: 0cba6879-bba6-43c9-944f-761199ff2ba6
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -145,12 +146,11 @@ Session ID: c2a63714-14c7-4330-bc66-97d1d6250b9e
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:308)
-	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:54)
-	at io.appium.java_client.TouchAction.perform(TouchAction.java:196)
-	at com.mvn.BestTest.seekbar2(BestTest.java:94)
-	at com.mvn.SeekBar.seek(SeekBar.java:21)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.mvn.GeneralStore.store(GeneralStore.java:16)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -186,7 +186,7 @@ Session ID: c2a63714-14c7-4330-bc66-97d1d6250b9e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-783008682\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-648789237\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -195,7 +195,7 @@ Session ID: c2a63714-14c7-4330-bc66-97d1d6250b9e
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.mvn.SeekBar&quot;/&gt;
+      &lt;class name=&quot;com.mvn.GeneralStore&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -237,14 +237,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'seek')
-data.setCell(0, 2, 'com.mvn.SeekBar')
-data.setCell(0, 3, 12069);
+data.setCell(0, 1, 'store')
+data.setCell(0, 2, 'com.mvn.GeneralStore')
+data.setCell(0, 3, 30105);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -270,7 +270,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.mvn.SeekBar</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.mvn.GeneralStore</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">test</span>
                 <span class="method-start">0 ms</span>
@@ -278,12 +278,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">seek</span>
-                <span class="method-start">8881 ms</span>
+                <span class="method-name">store</span>
+                <span class="method-start">22924 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">20957 ms</span>
+                <span class="method-start">53047 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

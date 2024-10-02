@@ -9,8 +9,8 @@ public class ScrollDemo extends BestTest {
 	@Test
 	public void scroll() throws InterruptedException {
 		
-//		driver.findElement(AppiumBy.accessibilityId("Views")).click();
-//		Thread.sleep(2000);
+		driver.findElement(AppiumBy.accessibilityId("Views")).click();
+		Thread.sleep(2000);
 //		
 //		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector())"
 //		+".scrollIntoView(text(\"WebView\"));")).click();

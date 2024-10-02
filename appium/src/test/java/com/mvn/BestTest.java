@@ -1,9 +1,12 @@
 package com.mvn;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.security.Provider.Service;
 import java.util.concurrent.TimeUnit;
 
+import org.checkerframework.checker.units.qual.s;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -15,13 +18,26 @@ import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class BestTest {
 	public AndroidDriver driver;
+	AppiumDriverLocalService service;
 	@BeforeTest
 	
 	public void test() throws MalformedURLException, InterruptedException {
+	
+		service=new AppiumServiceBuilder()
+				.withAppiumJS(
+				new File("C:\\Users\\Admin\\AppData"
+						+ "\\Roaming\\npm\\node_modules"
+						+ "\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1")
+			    .usingPort(4723)
+				.build();
+		service.start();
+		
 	UiAutomator2Options options=new UiAutomator2Options();
 	options.setDeviceName("jugal");
 	options.setApp("D:\\appium\\apk file\\apidemos-debug.apk");
@@ -32,7 +48,8 @@ public class BestTest {
 	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	 Thread.sleep(2000);
 	}
-	public void dragndrop(WebElement source) {
+	
+    public void dragndrop(WebElement source) {
 	 ((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
 			    "elementId", ((RemoteWebElement) source).getId(),
 			    "endX", 619,
