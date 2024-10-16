@@ -52,6 +52,71 @@ public class CalculatorDemo {
 	Thread.sleep(2000);
 	
 	System.out.println("msg is "+msgString);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_2")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/op_mul")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_5")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/eq")).click();
+	Thread.sleep(2000);
+	
+	String msgString1= driver.findElement(By.id("com.oneplus.calculator:id/result")).getText();
+	Thread.sleep(2000);
+	
+	System.out.println("msg is "+msgString1);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_9")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_0")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/op_sub")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_5")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_0")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/eq")).click();
+	Thread.sleep(2000);
+	
+	String msgString2= driver.findElement(By.id("com.oneplus.calculator:id/result")).getText();
+	Thread.sleep(2000);
+	
+	System.out.println("msg is "+msgString2);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_9")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_0")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/op_div")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_5")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/digit_0")).click();
+	Thread.sleep(2000);
+	
+	driver.findElement(By.id("com.oneplus.calculator:id/eq")).click();
+	Thread.sleep(2000);
+	
+	String msgString3= driver.findElement(By.id("com.oneplus.calculator:id/result")).getText();
+	Thread.sleep(2000);
+	
+	
+	
+	System.out.println("msg is "+msgString3);
 
 }
 }
